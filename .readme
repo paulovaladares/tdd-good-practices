@@ -1,0 +1,103 @@
+https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8
+https://www.npmjs.com/package/swagger
+https://guides.github.com/activities/hello-world/
+
+https://levelup.gitconnected.com/how-does-hoisting-work-in-javascript-es6-b0e06727e071
+https://levelup.gitconnected.com/arrow-function-vs-regular-function-in-javascript-b6337fb87032
+https://www.semrush.com/blog/semantic-html5-guide/
+
+
+# JS-TDD --------------------------------------------------------------------------------------------
+
+# Básico para se ter em um projeto bem estruturado
+
+- Inicializar o GIT
+  # git init
+
+- Criar o package.json
+  # npm init
+
+- Instalar e criar o gitignore
+  # npm i -g gitignore
+  # gitignore -types
+  # gitignore Node
+
+- Criar o Readme
+  # README.md (https://github.com/PurpleBooth/a-good-readme-template)
+
+- Criar o Licences
+  # LICENSE.md (https://opensource.org/)
+
+- Criar o Contributing
+  # CONTRIBUTING.md ()
+
+
+- Definir o estilo de codificação que será usado
+  JavaScript Style Guide (
+    # https://github.com/airbnb/javascript
+    # https://github.com/standard/standard
+    # https://github.com/rwaldron/idiomatic.js
+  )
+
+- Instalar e inicializar o ESLINT
+  # npm -i -type=dev eslint
+  # ./node_modules/.bin/eslint --init
+  Lints (
+    # https://eslint.org/
+    # https://eslint.org/docs/user-guide/getting-started
+  )
+
+- EditorConfig (
+  https://editorconfig.org/
+)
+
+- npm script (
+  inside package.json > bloco “scipts”
+)
+
+- Hooks (
+  Husky - https://github.com/typicode/husky
+)
+
+
+# ES6
+- http://es6-features.org/
+- https://kangax.github.io/compat-table/es6/
+- https://ponyfoo.com/articles/tagged/es6-in-depth
+
+(
+  Template literals: `Isso custa R$ ${value}`;
+  Tagged template: function tagging(template, ...values){} <----> tagging `termo1 ${valor} termo2 ${valor2}`;
+  Arrow function:
+    (param1, param2) => { // multi params and  multi actions };
+    param => { // single param and multi actions }
+    param => // single param and single action
+  Peomises then catch
+  Class (
+    https://medium.com/javascript-in-plain-english/private-member-in-javascript-class-2359ef666aaf
+  )
+  Simbol - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
+  Interable (
+    for...of: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
+    tx = txt[Simbol.iterator]();
+    tx.next()
+    function* fn() {yield "term01"; yield "term02";}
+    it = fn() --> it.next() --> it.next().value
+  )
+  new Proxy(a, b)
+  new Set()
+  new WeakSet()
+  new Map()
+  new WeakMap()
+  Async function / Await fetch
+  PadStart / padEnd
+)
+
+# WEBPACK
+
+- https://ramdajs.com/
+
+
+
+
+
