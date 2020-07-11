@@ -7,6 +7,12 @@
     "lint": "./node_modules/.bin/eslint ./src/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test"
+    }
+  },
   "author": "Paulo Valadares <contato@paulovaladares.com.br>",
   "license": "ISC",
   "devDependencies": {
@@ -14,6 +20,7 @@
     "@typescript-eslint/parser": "^3.6.0",
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0"
+    "eslint-plugin-import": "^2.22.0",
+    "husky": "^4.2.5"
   }
 }
