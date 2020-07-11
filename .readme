@@ -47,9 +47,23 @@ https://www.semrush.com/blog/semantic-html5-guide/
     # https://eslint.org/docs/user-guide/getting-started
   )
 
-- EditorConfig (
-  https://editorconfig.org/
-)
+
+- Configurar o .editorconfig e instalar plugin na IDE:
+  # https://editorconfig.org/
+  ex:
+'
+    #root = true
+
+    # [*]
+    # indent_style = space
+    # indent_size = 2
+    # end_of_line = lf
+    # charset = utf-8
+    # trim_trailing_whitespace = true
+    # insert_final_newline = true
+'
+
+# JS-TDD --------------------------------------------------------------------------------------------
 
 - npm script (
   inside package.json > bloco “scipts”
