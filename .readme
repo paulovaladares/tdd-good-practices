@@ -1,0 +1,69 @@
+# Básico para se ter em um projeto bem estruturado
+
+- Inicializar o GIT
+  # git init
+
+- Criar o package.json
+  # npm init
+
+- Instalar e criar o gitignore
+  # npm i -g gitignore
+  # gitignore -types
+  # gitignore Node
+
+- Criar o Readme
+  # README.md (https://github.com/PurpleBooth/a-good-readme-template)
+  https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8
+
+- Criar o Licences
+  # LICENSE.md (https://opensource.org/)
+
+- Criar o Contributing
+  # CONTRIBUTING.md ()
+
+
+- Definir o estilo de codificação que será usado
+  JavaScript Style Guide (
+    # https://github.com/airbnb/javascript
+    # https://github.com/standard/standard
+    # https://github.com/rwaldron/idiomatic.js
+  )
+
+- Instalar e inicializar o ESLINT
+  # npm -i -type=dev eslint
+  # ./node_modules/.bin/eslint --init
+  Lints (
+    # https://eslint.org/
+    # https://eslint.org/docs/user-guide/getting-started
+  )
+
+
+- Configurar o .editorconfig e instalar plugin na IDE:
+  # https://editorconfig.org/
+  ex:
+'
+    #root = true
+
+    # [*]
+    # indent_style = space
+    # indent_size = 2
+    # end_of_line = lf
+    # charset = utf-8
+    # trim_trailing_whitespace = true
+    # insert_final_newline = true
+'
+- Criar "scripts npm" dentro do package.json
+  # "lint": "./node_modules/.bin/eslint ./src/*.js",
+
+- Instalar e configurar os git Hooks usando Husky
+  # Husky - https://github.com/typicode/husky
+  # npm install husky --save-dev
+  ex:
+'
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test"
+    }
+  },
+'
